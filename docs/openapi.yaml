@@ -1,0 +1,142 @@
+openapi: 3.0.0
+info:
+  title: API Fiscal
+  version: 1.0.0
+  description: API para emissão e gestão de documentos fiscais eletrônicos.
+servers:
+  - url: http://localhost:4000/api/v1
+paths:
+  /companies:
+    post:
+      summary: Cria uma empresa
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Company'
+      responses:
+        '201':
+          description: Empresa criada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CompanyResponse'
+    get:
+      summary: Lista empresas
+      responses:
+        '200':
+          description: Lista de empresas
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  companies:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Company'
+  /certificates:
+    post:
+      summary: Cadastra certificado digital
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Certificate'
+      responses:
+        '201':
+          description: Certificado cadastrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CertificateResponse'
+    get:
+      summary: Lista certificados
+      responses:
+        '200':
+          description: Lista de certificados
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Certificate'
+  /documents:
+    post:
+      summary: Cria documento fiscal
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Document'
+      responses:
+        '201':
+          description: Documento criado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DocumentResponse'
+    get:
+      summary: Lista documentos fiscais
+      responses:
+        '200':
+          description: Lista de documentos
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Document'
+components:
+  schemas:
+    Company:
+      type: object
+      properties:
+        name: { type: string }
+        cnpj: { type: string }
+        state_registration: { type: string }
+        municipal_registration: { type: string }
+        phone: { type: string }
+        email: { type: string }
+        fiscal_regime: { type: string }
+        active: { type: boolean }
+    CompanyResponse:
+      type: object
+      properties:
+        company: { $ref: '#/components/schemas/Company' }
+        message: { type: string }
+        timestamp: { type: string }
+    Certificate:
+      type: object
+      properties:
+        company_id: { type: integer }
+        name: { type: string }
+        certificate_path: { type: string }
+        certificate_type: { type: string }
+        valid_until: { type: string, format: date }
+        active: { type: boolean }
+    CertificateResponse:
+      type: object
+      properties:
+        success: { type: boolean }
+        data: { $ref: '#/components/schemas/Certificate' }
+    Document:
+      type: object
+      properties:
+        document_type: { type: string }
+        company_cnpj: { type: string }
+        document_data: { type: object }
+    DocumentResponse:
+      type: object
+      properties:
+        success: { type: boolean }
+        data: { $ref: '#/components/schemas/Document' }

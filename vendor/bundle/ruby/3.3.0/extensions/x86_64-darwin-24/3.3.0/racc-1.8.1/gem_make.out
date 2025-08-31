@@ -1,0 +1,18 @@
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/danielmatos-pro/.rvm/rubies/ruby-3.3.8/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250821-43960-b5umh1 sitelibdir\=./.gem.20250821-43960-b5umh1 clean
+
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250821-43960-b5umh1 sitelibdir\=./.gem.20250821-43960-b5umh1
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250821-43960-b5umh1 sitelibdir\=./.gem.20250821-43960-b5umh1 install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20250821-43960-b5umh1/racc
+
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250821-43960-b5umh1 sitelibdir\=./.gem.20250821-43960-b5umh1 clean

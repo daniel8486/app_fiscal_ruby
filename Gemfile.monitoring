@@ -1,0 +1,4 @@
+# Gemfile
+# Adicione ao seu Gemfile:
+gem 'prometheus-client'
+gem 'rack-prometheus'

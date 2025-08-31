@@ -1,0 +1,19 @@
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
+/Users/danielmatos-pro/.rvm/rubies/ruby-3.3.8/bin/ruby extconf.rb
+checking for rb_io_mode_t in ruby/io.h... no
+creating Makefile
+
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250822-13040-dl80he sitelibdir\=./.gem.20250822-13040-dl80he clean
+
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250822-13040-dl80he sitelibdir\=./.gem.20250822-13040-dl80he
+compiling stringio.c
+linking shared-object stringio.bundle
+
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250822-13040-dl80he sitelibdir\=./.gem.20250822-13040-dl80he install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 stringio.bundle ./.gem.20250822-13040-dl80he
+
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250822-13040-dl80he sitelibdir\=./.gem.20250822-13040-dl80he clean

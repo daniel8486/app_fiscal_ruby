@@ -1,0 +1,19 @@
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/erb-5.0.2/ext/erb/escape
+/Users/danielmatos-pro/.rvm/rubies/ruby-3.3.8/bin/ruby extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250822-13040-e8ntkb sitelibdir\=./.gem.20250822-13040-e8ntkb clean
+
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250822-13040-e8ntkb sitelibdir\=./.gem.20250822-13040-e8ntkb
+compiling escape.c
+linking shared-object erb/escape.bundle
+
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250822-13040-e8ntkb sitelibdir\=./.gem.20250822-13040-e8ntkb install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 escape.bundle ./.gem.20250822-13040-e8ntkb/erb
+
+current directory: /Users/danielmatos-pro/www/app_fiscal/front-app-fiscal/vendor/bundle/ruby/3.3.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250822-13040-e8ntkb sitelibdir\=./.gem.20250822-13040-e8ntkb clean
