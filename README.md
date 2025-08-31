@@ -322,4 +322,4 @@ Para questões e suporte:
 
 ## Licença
 
-MIT License - veja arquivo LICENSE para detalhes.
+Desenvolvimento Daniel Djam
