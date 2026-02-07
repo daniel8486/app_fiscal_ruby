@@ -320,6 +320,5 @@ Para questões e suporte:
 - Monitore workers Sidekiq
 - Verifique conectividade com SEFAZ (em produção)
 
-## Licença
 
 Desenvolvimento Daniel Djam
