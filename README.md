@@ -320,5 +320,6 @@ Para questões e suporte:
 - Monitore workers Sidekiq
 - Verifique conectividade com SEFAZ (em produção)
 
+## ADD XML
 
 Desenvolvimento Daniel Djam
